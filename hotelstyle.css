@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #1f2937;
+    color: white;
+
+    padding: 20px 50px;
+}
+
+.logo {
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("images/hotel-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 15px 30px;
+    margin: 10px;
+
+    background: #2563eb;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 60px 20px;
+}
+
+.feature-card {
+    background: white;
+
+    width: 300px;
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    background: #1f2937;
+    color: white;
+}
+/* Page Header */
+.page-header {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+/* Room Grid */
+.room-grid {
+    display: flex;
+    flex-direction: column;
+    /* Vertical structure */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Room Card */
+.room-card {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.room-card img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.room-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .room-card {
+        flex-direction: column;
+    }
+
+    .room-card img {
+        width: 100%;
+    }
+}
+.food-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.food-card {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-card img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.food-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.food-content .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.quantity {
+    width: 60px;
+    margin-left: 10px;
+}
+
+.cart-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .food-card {
+        flex-direction: column;
+    }
+
+    .food-card img {
+        width: 100%;
+    }
+}
+.cart-item {
+    padding: 10px;
+    margin: 10px 0;
+
+    background: white;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item p {
+    margin: 0;
+}
+.food-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.food-card {
+    display: flex;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.food-card img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.food-content {
+    margin-left: 15px;
+}
+
+.qty {
+    width: 60px;
+    margin-top: 10px;
+}
+
+.cart-section {
+    margin-top: 40px;
+}
+
+.cart-item {
+    background: #f1f1f1;
+    padding: 10px;
+    margin: 10px 0;
+}
