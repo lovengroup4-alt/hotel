@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOB HOTEL - Food Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">BOB HOTEL</h1>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="food.html">Food</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-header">
+            <h2>Restaurant Menu</h2>
+            <p>Order delicious meals from BOB HOTEL</p>
+        </section>
+
+        <!-- FOOD LIST -->
+        <section class="food-grid">
+
+            <!-- ITEM 1 -->
+            <div class="food-card">
+                <img src="images/burger.jpg">
+
+                <div class="food-content">
+                    <h3>Classic Burger</h3>
+                    <p>Beef burger with cheese and fries.</p>
+                    <p class="price">$18.99</p>
+
+                    <input type="number" min="1" value="1" class="qty">
+
+                    <button class="btn add-to-cart" data-name="Classic Burger" data-price="18.99">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="food-card">
+                <img src="images/pizza.jpg">
+
+                <div class="food-content">
+                    <h3>Margherita Pizza</h3>
+                    <p>Fresh cheese, tomato sauce, basil.</p>
+                    <p class="price">$22.50</p>
+
+                    <input type="number" min="1" value="1" class="qty">
+
+                    <button class="btn add-to-cart" data-name="Margherita Pizza" data-price="22.50">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="food-card">
+                <img src="images/pasta.jpg">
+
+                <div class="food-content">
+                    <h3>Creamy Pasta</h3>
+                    <p>Italian pasta with creamy sauce.</p>
+                    <p class="price">$16.00</p>
+
+                    <input type="number" min="1" value="1" class="qty">
+
+                    <button class="btn add-to-cart" data-name="Creamy Pasta" data-price="16.00">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CART -->
+        <section class="cart-section">
+
+            <h2>Your Cart</h2>
+
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <h3 id="cart-total">Total: $0.00</h3>
+
+            <button class="btn" id="checkout-btn">
+                Checkout
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BOB HOTEL</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
